@@ -123,7 +123,7 @@ const FileUploadPage = ({ documentType, onBack }) => {
                 </div>
               ))}
             </div>
-            <Button className="w-full mt-4 bg-inherit text-black border-2 border-black hover:bg-black hover:text-white ${circleCommonClasses} mr-1">Processing File ...</Button>
+            <Button className="w-full mt-4 bg-inherit text-black border-2 border-black hover:bg-white hover:text-black ">Processing File ...</Button>
             <a href={`https://testoshiba.infrahive.io/`} target="_blank">
               <Button className="w-full mt-4">View in new Tab</Button>
             </a>
