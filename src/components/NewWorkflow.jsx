@@ -20,6 +20,10 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 
+
+
+
+
 const FileUploadPage = ({ documentType, onBack }) => {
   const [files, setFiles] = useState([]);
   const [isDragging, setIsDragging] = useState(false);
@@ -119,9 +123,10 @@ const FileUploadPage = ({ documentType, onBack }) => {
                 </div>
               ))}
             </div>
-            <Link to={`https://testoshiba.infrahive.io/`}>
-              <Button className="w-full mt-4">Process Files</Button>
-            </Link>
+            <Button className="w-full mt-4 bg-inherit text-black border-2 border-black hover:bg-black hover:text-white ${circleCommonClasses} mr-1">Processing File ...</Button>
+            <a href={`https://testoshiba.infrahive.io/`} target="_blank">
+              <Button className="w-full mt-4">View in new Tab</Button>
+            </a>
             
           </div>
         )}
