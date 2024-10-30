@@ -119,7 +119,10 @@ const FileUploadPage = ({ documentType, onBack }) => {
                 </div>
               ))}
             </div>
-            <Button className="w-full mt-4">Process Files</Button>
+            <Link to={`https://testoshiba.infrahive.io/`}>
+              <Button className="w-full mt-4">Process Files</Button>
+            </Link>
+            
           </div>
         )}
       </Card>
@@ -179,11 +182,11 @@ const DataTransformationPage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
         {documentCards.map((card, index) => (
-          <Link to={`https://testoshiba.infrahive.io/`} key={index}>
+          
             <Card 
             key={index}
             className="p-4 hover:shadow-lg transition-all duration-200 cursor-pointer"
-            // onClick={() => setSelectedDocument(card.title)}
+            onClick={() => setSelectedDocument(card.title)}
           >
             <div className="flex items-start gap-4">
               <div className="p-2 bg-gray-50 rounded-lg">
@@ -195,7 +198,7 @@ const DataTransformationPage = () => {
               </div>
             </div>
           </Card>
-          </Link>
+          
         ))}
       </div>
 
